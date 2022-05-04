@@ -1,0 +1,14 @@
+<div class="alert alert-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 routerLink="/home" class="cursor-pointer">Movie Browser</h3>
+            </div>
+            <div class="col-md-8">
+                <form (submit)="submitHandler($event)">
+                    <input type="text" name="queryTerm" [(ngModel)]="queryTerm" class="form-control" autofocus placeholder="Buscar películas">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

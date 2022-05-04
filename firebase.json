@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/movies-browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
