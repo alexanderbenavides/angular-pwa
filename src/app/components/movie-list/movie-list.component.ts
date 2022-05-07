@@ -9,7 +9,7 @@ import { MoviesService } from 'src/app/services/movies.service';
 })
 export class MovieListComponent implements OnInit {
 
-  movies: any[] = [];
+  movies!: any[];
   constructor(
     private moviesService: MoviesService,
     private activatedRoute: ActivatedRoute) { }
@@ -17,8 +17,7 @@ export class MovieListComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.queryParams.subscribe((resp: any) => {
       this.moviesService.searchMovies(resp.q).subscribe(response => {
-        console.log(response);
-        this.movies = response
+        this.movies = response;
       });
     });
 
