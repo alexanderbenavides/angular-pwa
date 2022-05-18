@@ -12,6 +12,10 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js"
+        ],
+        "urls": [
+          "https://bootswatch.com/5/superhero/bootstrap.min.css",
+          "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
         ]
       }
     },
@@ -24,6 +28,21 @@
           "/assets/**",
           "/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
         ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "mis-apis",
+      "urls": [
+        "https://movies-app1.p.rapidapi.com/api",
+        "https://image.tmdb.org/t/p/w300"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 5,
+        "maxAge": "50m",
+        "timeout": "5s"
       }
     }
   ]
